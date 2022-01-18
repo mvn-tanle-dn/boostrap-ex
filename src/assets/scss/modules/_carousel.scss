@@ -1,0 +1,63 @@
+.carousel {
+  @include pxRem(max-width, 1000);
+  @include pxRem(margin, 0 auto);
+  position: relative;
+  &-wrapper {
+    @include pxRem(width, 100%);
+    @include pxRem(height, 600);
+    overflow: hidden;
+    position: relative;
+  }
+  &-main {
+    display: flex;
+    transition: transform 0.25s linear;
+  }
+  &-item {
+    @include pxRem(width, 100%);
+    @include pxRem(height, 100%);
+    flex: 1 0 100%;
+  }
+  &-img {
+    @include pxRem(width, 100%);
+    @include pxRem(height, 100%);
+    object-fit: cover;
+    @include pxRem(border-radius, 20);
+  }
+  &-prev,
+  &-next {
+    @include pxRem(width, 40);
+    @include pxRem(height, 40);
+    @include pxRem(border-radius, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    @include pxRem(top, 50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    color: map-get($colors, black);
+    background-color: map-get($colors, white);
+  }
+  &-prev {
+    @include pxRem(left, 25);
+  }
+  &-next {
+    @include pxRem(right, 25);
+  }
+  &-dots {
+    display: flex;
+    align-items: center;
+    @include pxRem(gap, 25);
+    position: absolute;
+    @include pxRem(left, 50%);
+    @include pxRem(bottom, 25);
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  &-dot {
+    @include pxRem(width, 35);
+    @include pxRem(height, 5);
+    background-color: map-get($colors, white);
+  }
+}

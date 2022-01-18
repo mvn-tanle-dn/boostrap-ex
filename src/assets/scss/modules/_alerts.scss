@@ -1,0 +1,31 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  @include pxRem(padding, 10);
+  &-btn-close {
+    cursor: pointer;
+  }
+  &-default {
+    background-color: map-get($colors, info-color);
+  }
+  &-primary {
+    background-color: map-get($colors, primary-color);
+  }
+  &-secondary {
+    background-color: map-get($colors, secondary-color);
+  }
+  &-success {
+    background-color: map-get($colors, success-color);
+  }
+  &-info {
+    background-color: map-get($colors, info-color);
+  }
+  &-warning {
+    background-color: map-get($colors, warning-color);
+  }
+  &-danger {
+    background-color: map-get($colors, danger-color);
+  }
+}

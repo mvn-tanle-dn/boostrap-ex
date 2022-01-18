@@ -1,0 +1,181 @@
+.hidden {
+  display: none !important;
+}
+
+.rounded-pill {
+  border-radius: 15%;
+}
+
+// Spacing
+
+// 1.Margin
+.m-1 {
+  @include pxRem(margin, 10);
+}
+
+.m-2 {
+  @include pxRem(margin, 15);
+}
+
+.m-3 {
+  @include pxRem(margin, 20);
+}
+
+.mx-1 {
+  @include pxRem(margin, 0 10);
+}
+
+.mx-2 {
+  @include pxRem(margin, 0 15);
+}
+
+.mx-3 {
+  @include pxRem(margin, 0 20);
+}
+
+.my-1 {
+  @include pxRem(margin, 10 0);
+}
+
+.my-2 {
+  @include pxRem(margin, 15 0);
+}
+
+.my-3 {
+  @include pxRem(margin, 20 0);
+}
+
+.mt-1 {
+  @include pxRem(margin-top, 10);
+}
+.mb-1 {
+  @include pxRem(margin-bottom, 10);
+}
+.mr-1 {
+  @include pxRem(margin-right, 10);
+}
+.ml-1 {
+  @include pxRem(margin-left, 10);
+}
+
+.mt-2 {
+  @include pxRem(margin-top, 15);
+}
+.mb-2 {
+  @include pxRem(margin-bottom, 15);
+}
+.mr-2 {
+  @include pxRem(margin-right, 15);
+}
+.ml-2 {
+  @include pxRem(margin-left, 15);
+}
+
+.mt-3 {
+  @include pxRem(margin-top, 20);
+}
+.mb-3 {
+  @include pxRem(margin-bottom, 20);
+}
+.mr-3 {
+  @include pxRem(margin-right, 20);
+}
+.ml-3 {
+  @include pxRem(margin-left, 20);
+}
+
+// 2.Padding
+.p-1 {
+  @include pxRem(padding, 10);
+}
+
+.p-2 {
+  @include pxRem(padding, 15);
+}
+
+.p-3 {
+  @include pxRem(padding, 20);
+}
+
+.px-1 {
+  @include pxRem(padding, 0 10);
+}
+
+.px-2 {
+  @include pxRem(padding, 0 15);
+}
+
+.px-3 {
+  @include pxRem(padding, 0 20);
+}
+
+.py-1 {
+  @include pxRem(padding, 10 0);
+}
+
+.py-2 {
+  @include pxRem(padding, 15 0);
+}
+
+.py-3 {
+  @include pxRem(padding, 20 0);
+}
+
+.pt-1 {
+  @include pxRem(padding-top, 10);
+}
+.pb-1 {
+  @include pxRem(padding-bottom, 10);
+}
+.pr-1 {
+  @include pxRem(padding-right, 10);
+}
+.pl-1 {
+  @include pxRem(padding-left, 10);
+}
+
+.pt-2 {
+  @include pxRem(padding-top, 15);
+}
+.pb-2 {
+  @include pxRem(padding-bottom, 15);
+}
+.pr-2 {
+  @include pxRem(padding-right, 15);
+}
+.pl-2 {
+  @include pxRem(padding-left, 15);
+}
+
+.pt-3 {
+  @include pxRem(padding-top, 20);
+}
+.pb-3 {
+  @include pxRem(padding-bottom, 20);
+}
+.pr-3 {
+  @include pxRem(padding-right, 20);
+}
+.pl-3 {
+  @include pxRem(padding-left, 20);
+}
+
+// Background Color
+.bg-primary {
+  background-color: map-get($colors, primary-color);
+}
+.bg-secondary {
+  background-color: map-get($colors, secondary-color);
+}
+.bg-success {
+  background-color: map-get($colors, success-color);
+}
+.bg-info {
+  background-color: map-get($colors, info-color);
+}
+.bg-warning {
+  background-color: map-get($colors, warning-color);
+}
+.bg-danger {
+  background-color: map-get($colors, danger-color);
+}

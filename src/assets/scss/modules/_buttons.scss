@@ -1,0 +1,106 @@
+.btn {
+  @include pxRem(padding, 10 12);
+  border: none;
+  cursor: pointer;
+  @include pxRem(border-radius, 4);
+  transition: all 0.25s linear;
+  color: map-get($colors, white);
+  &-sm {
+    @include pxRem(padding, 5 8);
+  }
+  &-lg {
+    @include pxRem(padding, 14 18);
+  }
+  &-primary {
+    background-color: map-get($colors, primary-color);
+    &:hover {
+      background-color: map-get($colors, primary-color-dark);
+    }
+  }
+  &-outline-primary {
+    color: map-get($colors, primary-color);
+    border: 1px solid map-get($colors, primary-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, white);
+      background-color: map-get($colors, primary-color);
+    }
+  }
+  &-secondary {
+    background-color: map-get($colors, secondary-color);
+    &:hover {
+      background-color: map-get($colors, secondary-color-dark);
+    }
+  }
+  &-outline-secondary {
+    color: map-get($colors, secondary-color);
+    border: 1px solid map-get($colors, secondary-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, white);
+      background-color: map-get($colors, secondary-color);
+    }
+  }
+  &-success {
+    background-color: map-get($colors, success-color);
+    &:hover {
+      background-color: map-get($colors, success-color-dark);
+    }
+  }
+  &-outline-success {
+    color: map-get($colors, success-color);
+    border: 1px solid map-get($colors, success-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, white);
+      background-color: map-get($colors, success-color);
+    }
+  }
+  &-danger {
+    background-color: map-get($colors, danger-color);
+    &:hover {
+      background-color: map-get($colors, danger-color-dark);
+    }
+  }
+  &-outline-danger {
+    color: map-get($colors, danger-color);
+    border: 1px solid map-get($colors, danger-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, white);
+      background-color: map-get($colors, danger-color);
+    }
+  }
+  &-warning {
+    color: map-get($colors, black);
+    background-color: map-get($colors, warning-color);
+    &:hover {
+      background-color: map-get($colors, warning-color-dark);
+    }
+  }
+  &-outline-warning {
+    color: map-get($colors, warning-color);
+    border: 1px solid map-get($colors, warning-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, black);
+      background-color: map-get($colors, warning-color);
+    }
+  }
+  &-info {
+    color: map-get($colors, black);
+    background-color: map-get($colors, info-color);
+    &:hover {
+      background-color: map-get($colors, info-color-dark);
+    }
+  }
+  &-outline-info {
+    color: map-get($colors, info-color);
+    border: 1px solid map-get($colors, info-color);
+    background-color: map-get($colors, white);
+    &:hover {
+      color: map-get($colors, black);
+      background-color: map-get($colors, info-color);
+    }
+  }
+}
