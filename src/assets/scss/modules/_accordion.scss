@@ -1,0 +1,35 @@
+.accordion {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    @include pxRem(padding, 10);
+  }
+  &-btn {
+    background-color: transparent;
+    border: 0;
+  }
+  &-icon {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &-icon-active {
+    transform: rotate(180deg);
+  }
+  &-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    &-content {
+      @include pxRem(padding, 10);
+      border: 1px solid black;
+      border-top: 0;
+    }
+  }
+  &-body-active {
+    transition: max-height 0.3s ease-in;
+    max-height: 600px;
+  }
+}

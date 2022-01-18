@@ -1,0 +1,69 @@
+.spinner {
+  @include pxRem(width, 33);
+  @include pxRem(height, 33);
+  @include pxRem(border-radius, 50%);
+  border: 5px solid map-get($colors, secondary-color);
+  border-right: 5px solid transparent !important;
+  animation: spinner 1s infinite linear;
+  margin: 0;
+  &-primary {
+    border-color: map-get($colors, primary-color);
+  }
+  &-secondary {
+    border-color: map-get($colors, secondary-color);
+  }
+  &-success {
+    border-color: map-get($colors, success-color);
+  }
+  &-info {
+    border-color: map-get($colors, info-color);
+  }
+  &-warning {
+    border-color: map-get($colors, warning-color);
+  }
+  &-danger {
+    border-color: map-get($colors, danger-color);
+  }
+}
+
+.spinner-grow {
+  @include pxRem(width, 33);
+  @include pxRem(height, 33);
+  @include pxRem(border-radius, 50%);
+  background-color: map-get($colors, black);
+  animation: spinner-grow 0.5s infinite linear;
+  margin: 0;
+  &-primary {
+    background-color: map-get($colors, primary-color);
+  }
+  &-secondary {
+    background-color: map-get($colors, secondary-color);
+  }
+  &-success {
+    background-color: map-get($colors, success-color);
+  }
+  &-info {
+    background-color: map-get($colors, info-color);
+  }
+  &-warning {
+    background-color: map-get($colors, warning-color);
+  }
+  &-danger {
+    background-color: map-get($colors, danger-color);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

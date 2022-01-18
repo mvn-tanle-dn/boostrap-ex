@@ -1,0 +1,10 @@
+.collapse {
+  @include pxRem(max-height, 0);
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapse-active {
+  @include pxRem(max-height, 500);
+  transition: max-height 0.3s ease-in;
+}

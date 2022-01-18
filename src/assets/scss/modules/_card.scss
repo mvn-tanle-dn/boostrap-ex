@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  @include pxRem(border-radius, 5);
+  @include pxRem(width, 300);
+  &-img {
+    @include pxRem(width, 100%);
+    @include pxRem(height, 100%);
+    object-fit: cover;
+  }
+  &-body {
+    @include pxRem(padding, 16);
+  }
+  &-desc {
+    @include pxRem(margin-top, 12);
+    @include pxRem(margin-bottom, 20);
+  }
+}

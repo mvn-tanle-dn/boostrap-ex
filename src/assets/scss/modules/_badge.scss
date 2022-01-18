@@ -1,0 +1,5 @@
+.badge {
+  @include pxRem(padding, 3 7);
+  color: white;
+  @include pxRem(border-radius, 3);
+}

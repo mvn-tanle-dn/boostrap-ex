@@ -1,0 +1,13 @@
+.progress {
+  @include pxRem(width, 100%);
+  @include pxRem(height, 20);
+  background-color: gray;
+  position: relative;
+  &-bar {
+    @include pxRem(height, 100%);
+    position: absolute;
+    @include pxRem(top, 0);
+    @include pxRem(left, 0);
+    z-index: 10;
+  }
+}
