@@ -1,0 +1,38 @@
+.offcanvas {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  @include pxRem(padding, 20);
+  @include pxRem(top, 0);
+  @include pxRem(left, 0);
+  @include pxRem(width, 40%);
+  @include pxRem(height, 100%);
+  background-color: map-get($colors, white);
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-body {
+    @include pxRem(margin-top, 20);
+  }
+}
+
+.offcanvas-wrapper {
+  transform: translateX(-100%);
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.3s ease-in;
+}
+
+.offcanvas-active {
+  transform: translateX(100%);
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.7);
+  transition: all 0.3s ease-out;
+}

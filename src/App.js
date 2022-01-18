@@ -6,6 +6,7 @@ import Card from "./components/Card";
 import Carousel from "./components/Carousel";
 import Collapse from "./components/Collapse";
 import Modal from "./components/Modal";
+import Offcanvas from "./components/Offcanvas";
 import Progress from "./components/Progress";
 import Spinner from "./components/Spinner";
 
@@ -52,6 +53,9 @@ function App() {
       </li>
       <li className="app-item">
         <Progress color="primary" value="500" />
+      </li>
+      <li className="app-item">
+        <Offcanvas />
       </li>
     </ul>
   );
